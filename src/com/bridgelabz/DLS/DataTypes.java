@@ -20,7 +20,7 @@ public class DataTypes {
             char c = 'V'; // '\u0000'
             boolean b = false; // false
 
-            // byte -> short -> int -> long-> float -> double
+            // byte -> short -> int -> long-> float -> double(Here type casting is not need)
             //char->
 
             System.out.println((int) c);
@@ -61,7 +61,7 @@ public class DataTypes {
 
 
             int a1 = -212;
-            byte v1 = (byte) a1;
+            byte v1 = (byte) a1; //(Data loss that why we can not get correct output)
 
             System.out.println("a1 =>" + a1);  // -21
             System.out.println("v1 => " + v1); // -21
